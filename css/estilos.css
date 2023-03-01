@@ -1,0 +1,169 @@
+   footer {
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  /* Estilo del Body */
+  body {
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: white; }
+  
+    /* Estilo del Logo Superior*/
+.logo-superior {
+    border-radius: 4rem;
+    max-width: 4rem;
+    max-height: 4rem; }
+  /* Estilo del Header version mobile */
+  header {
+    top: 0;
+    height: auto;
+    display: block;
+    background-color: lightblue; }
+    header h1 {
+      font-weight: bold;
+      font-size: 2rem; }
+    
+  /* Estilo de cada etiqueta p */
+  .parrafo {
+    display: block;
+    grid-area: parrafo;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem; }
+
+    .ocultar {
+        display: none; }
+  
+    /* Modificando el Footer con Grid */
+  footer {
+    height: auto;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "derechos"
+   " fuentes"
+   " GB"; }
+    footer h3 {
+      font-size: 1rem; }
+    footer .derechos {
+      padding-top: 1rem;
+      text-align: center;
+      grid-area: derechos;
+      font-size: 1.2rem; }
+    footer .fuentes {
+      text-align: center;
+      grid-area: fuentes;
+      font-size: 1.2rem; }
+    footer .GB {
+      text-align: center;
+      grid-area: GB;
+      font-size: 1.2rem; }
+  
+  /* Centrando el carrusel de la Galeria*/
+  .galeria {
+    display: grid; }
+  
+  /*Centrando los Subtitulos y engrosando su fuente*/
+  .subtitulos {
+    text-align: center;
+    font-weight: bold; }
+  
+    .ig {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .linkedin {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .fb {
+        max-width: 4rem;
+        max-height: 4rem; }
+  /* Media Queries */
+  @media screen and (min-width: 600px) {
+    /* dando un mayor tamaño a las fuentes*/
+    header h1 {
+      font-size: 3rem; }
+    header nav ul li {
+      font-size: 1.5rem; }
+    /* Ocultando el carrusel del index */
+    .ocultar {
+        display: none; }
+    
+    /* Cambiando el tamaño de la fuente */
+    footer h3 {
+      font-size: 1.6rem; } }
+    
+      .ig {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .linkedin {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .fb {
+        max-width: 4rem;
+        max-height: 4rem; }
+  
+  /* Media Queries Version Desktop*/
+  @media screen and (min-width: 1024px) {
+    /* Agregando estilos al header*/
+    header {
+      background-color: lightblue;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: row; }
+    /* Mostrando el carrusel del index */
+      .ocultar {
+        display: block; }
+    .formularios {
+      padding: 4rem; }
+    /* Cambiando el tamaño de la fuente */
+    .usuario {
+      font-size: 1.5rem; }
+
+
+    .ig {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .linkedin {
+        max-width: 4rem;
+        max-height: 4rem; }
+      
+    .fb {
+        max-width: 4rem;
+        max-height: 4rem; }
+    /* Agregando animacion al Footer y posicionando de manera diferente el footer con grid */
+    footer {
+      justify-content: space-around;
+      align-content: space-around;
+      background-color: lightblue;
+      margin-top: 3rem;
+      display: flex;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: " derechos "
+   " fuentes"
+   " GB "; }
+      footer .ff {
+        list-style: none; }
+      footer .derechos {
+        grid-area: derechos; }
+      footer .fuentes {
+        grid-area: fuentes; }
+      footer .GB {
+        grid-area: GB; }
+
